@@ -16,7 +16,7 @@ public class AnimalHospitalV2<T> {
         animal.equals(null);
 
         // 컴파일 오류
-        //System.out.println("동물 이름: " + animal.getName());
+//        System.out.println("동물 이름: " + animal.getName());
         //System.out.println("동물 크기: " + animal.getSize());
         //animal.sound();
     }
