@@ -1,15 +1,9 @@
 package collection.list;
 
 //BatchProcessor는 MyList에 의존한다.
-public class BatchProcessor {
+public class LinkedBatchProcessor {
 
-    private final MyList<Integer> list;
-
-    //MyList = new MyArrayList
-    //MyList = new MyLinkedList
-    public BatchProcessor(MyList<Integer> list) {
-        this.list = list;
-    }
+    private final MyLinkedList<Integer> list = new MyLinkedList<>();
 
     public void logic(int size) {
         long startTime = System.currentTimeMillis();
