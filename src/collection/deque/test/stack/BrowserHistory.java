@@ -7,7 +7,6 @@ public class BrowserHistory {
     private Deque<String> history = new ArrayDeque<>();
     private String currentPage = null;
 
-
     public void visitPage(String url) {
         if (currentPage != null) {
             history.push(url);
