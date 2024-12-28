@@ -1,6 +1,6 @@
 package collection.compare;
 
-public class MyUser /*implements Comparable<MyUser>*/{
+public class MyUser implements Comparable<MyUser>{
 
     private String id;
     private int age;
@@ -18,11 +18,10 @@ public class MyUser /*implements Comparable<MyUser>*/{
         return age;
     }
 
-   /* @Override
+    @Override
     public int compareTo(MyUser o) {
-        System.out.println(this + " vs " + o);
         return this.age < o.age ? -1 : (this.age == o.age ? 0 : 1);
-    }*/
+    }
 
     @Override
     public String toString() {
